@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>web svg test</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.5-dist/css/bootstrap-colorpicker.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="sniperBackground"></div>
+	<div class="sight">
+		<div class="crosshair"></div>
+		<div class="x-sights"></div>
+		<div class="y-sights"></div>
+	</div>
+	<div id="toolbar" class="panel">
+		<section>
+			<label>改變顏色：</label>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" id="changeBodyColor" >body</button>
+				<button type="button" class="btn btn-default" id="changeWingColor" >wing</button>
+				<button type="button" class="btn btn-default" id="changeBeakColor" >beak</button>
+			</div>
+		</section>
+		<section>
+			<label>改變鳥數：</label>
+			<span id="increase" class="glyphicon glyphicon-plus-sign"></span>
+			<span id="decrease" class="glyphicon glyphicon-minus-sign"></span>
+		</section>
+		<section>
+			<label>狙擊者模式：<input type="checkbox" id="snipper"></label>
+		</section>
+		<button style="float: right" id="reset" class="btn btn-primary">reset</button>
+	</div>
+	<div id="example"></div>
+</div>
+<audio>
+	<source src="audio/gun.mp3"></source>
+</audio>
+	<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="lib/snap.svg-min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-3.3.5-dist/js/bootstrap-colorpicker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>			
+</body>
+</html>
